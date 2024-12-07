@@ -1,0 +1,7 @@
+services:
+  web:
+    image: arlindoas2/simulador-do-caos:v2
+    ports:
+      - 8080:3000
+    restart: always
+    
