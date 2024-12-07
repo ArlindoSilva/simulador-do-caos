@@ -6,3 +6,10 @@ services:
     restart: always
     healthcheck: 
       disable: true 
+    cpuset: "0"
+    memswap_limit: 512M
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
